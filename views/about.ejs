@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Заголовок страницы</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+     crossorigin="anonymous">
+
+   <style>
+      body {background-color: #b86c57;}
+      h1 {color: white; font-size: 2em}
+      p {color: #afafaf; font-size: 1.1em}
+   </style>
+</head>
+<body>
+  <% include blocks/header.ejs %>
+  <div class="block">
+  <h1>Привет, Мир!</h1>
+  <p>Медленный жесткий диск
+  Мало кто догадывается, но на сегодняшний день самым «узким» местом в работе компьютерного железа является жесткий диск. Все дело в ограниченной скорости вращения шпинделя жесткого диска. В настольных компьютерах она составляет 7.200 оборотов в минуту – и это одна из причин, почему тупит и тормозит комп. Есть и более быстрые HDD, но их стоимость существенно выше.
+
+  Кроме привычных всем жестких дисков с магнитными пластинами, последние несколько лет набирает популярность и становится все более доступным новый тип – SSD диск. Принцип его работы основан не на магнитных пластинах, а на записи информации с использованием быстрой флэш-памяти.
+
+  Такие жесткие диски в несколько раз быстрее обычных HDD, и работают абсолютно бесшумно. Однако явными недостатками являются высокая стоимость при довольно маленьком объеме и ограниченное количество циклов чтения/записи. О том, как устроен жесткий диск и принципе его работы, читайте нашу специальную статью.
+
+  Пять основных причины</p>
+  <form method="post" action="/about">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" name="check" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">ОТПРАВИТЬ</button>
+  </form>
+</div>
+</body>
+</html>
